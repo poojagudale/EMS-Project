@@ -14,5 +14,8 @@ public class EmployeeDto {
         private String firstName;
         private String lastName;
         private String email;
+        private String mobileNumber;
+        private String address;
+        private String dateOfBirth;
 
 }
