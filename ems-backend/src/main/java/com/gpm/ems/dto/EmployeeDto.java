@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -16,6 +18,6 @@ public class EmployeeDto {
         private String email;
         private String mobileNumber;
         private String address;
-        private String dateOfBirth;
-
+        @JsonFormat(pattern = "yyyy-MM-dd")
+        private LocalDate dateOfJoining;
 }
